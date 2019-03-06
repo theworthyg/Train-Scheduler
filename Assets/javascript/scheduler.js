@@ -9,6 +9,7 @@ $(document).ready(function() {
         storageBucket: "train-scheduler-ac267.appspot.com",
         messagingSenderId: "631254021245"
       };
+      
       firebase.initializeApp(config);
   
 
