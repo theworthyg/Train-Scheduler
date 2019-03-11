@@ -26,7 +26,7 @@ $(document).ready(function() {
 	  var firstTrain = $("#firstTrain-input").val().trim();
 	  var trainFreq = $("#freq-input").val().trim();
 
-	  // temporary object for holding train data
+	  // object for holding train data
 	  var newTrain = {
 	  	name: trainName,
 	  	destination: trainDest,
@@ -38,7 +38,7 @@ $(document).ready(function() {
   		database.ref().push(newTrain);
 
 
-	   // users alert
+	   // alert
   		alert("Train successfully added");
 
 	 // Clears all of the text-boxes
@@ -53,14 +53,14 @@ $(document).ready(function() {
 
 	  console.log(childSnapshot.val());
 
-	  // Store variable.
+	  // Stored variable.
 	  var trainName = childSnapshot.val().name;
 	  var trainDest = childSnapshot.val().destination;
 	  var firstTrain = childSnapshot.val().start;
 	  var trainFreq = childSnapshot.val().frequency;
 
 
-	   // Declare variable
+	   // Declared variable
   		var trainFreq;
 
   		// Time on the form
